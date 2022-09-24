@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*!.background{
+    position: absolute;
+    z-index: 0;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 16vh;
+}*/
+
+.header{
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    top: 0px;
+    width: 100%;
+    height: 16vh;
+    position: relative;
+    display: inline-block;
+}
+
+.logoPrincipal{
+    border: solid 3px white;
+    margin: 10px;
+    padding: 3px;
+    display: block;
+}
+
+.titulo{
+    color:whitesmoke;
+    top: 35%;
+    left: 110px;
+    display: inline-block;
+    position: absolute;
+}
+
+.menu{
+    list-style: none;
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    height: 80vh;
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: right;
+}
+
+.menuNavegacion{
+    text-decoration: none;
+    color: white;
+    border: solid 1px white;
+    padding: 7px;
+    margin: 3px;
+    display: inline-block;
+}
+
+.contenido{
+    position: relative;
+    background-color: gray;
+    z-index: 0;
+}
+
+.center{
+    position: relative;
+    text-align: center;
+}
+.main{
+    background-color: gray;
+}
+
+.tarjeta{
+    padding: 15px;
+    margin: 50px;
+    height: auto;
+    width: 25vh;
+    display: inline-block;
+}
+
+.imagenTarjeta{
+    display: inline-block;
+}
+
+.tituloTarjeta{
+    display: inline-block;
+    color: rgb(256, 256, 256);
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.infoTarjeta{
+    display: inline-block;
+    color: white;
+    text-align: left;
+    margin: 10px;
+    width: 200px;
+}
+
+.ampliarTarjeta{
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+}
+
+.tarjeta{
+    padding: 15px;
+    margin: 50px;
+    height: auto;
+    width: 25vh;
+    display: inline-block;
+}
+
+.imagenTarjeta{
+    display: inline-block;
+}
+
+.tituloTarjeta{
+    display: inline-block;
+    color: rgb(256, 256, 256);
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.infoTarjeta{
+    display: inline-block;
+    color: white;
+    text-align: left;
+    margin: 10px;
+    width: 200px;
+}
+
+.ampliarTarjeta{
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer{
+    position: relative;
+    width: 100%;
+    height: 16vh;
+    background-color: black;
+}
