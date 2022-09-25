@@ -4,25 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="shortcut icon" href="/ProyectoFinal/favicon.ico">
+    <title>K-Review pruebas</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="../CSS/nuevos.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
 </head>
+
 <body>
     <!--Header-->
-    <header>
-        <img src="https://picsum.photos/80" alt="Logo principal">
-        <h1> K-Review </h1>
-        <nav>
-            <a href="../index.html">Inicio</a>
-            <a href="#">Nuevos</a>
-            <a href="./Proximos.html">Próximos</a>
-            <a href="./Noticias.html">Noticias</a>
-            <a href="./Suscribete.html">Suscribete</a>
-        </nav>
+    <header class = "d-flex container-fluid bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="../Img/Logo_80x80.png" alt="" width="30" height="50" class="links align-text-center text-white logoPrincipal ">
+                    K-Review
+                </a>
+                <div class=" col navbar navbar-expand-lg navbar-light bg-secondary mx-auto">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse mx-auto" id="navbarTogglerDemo03">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
+                            <li class="nav-item">
+                                <a class="links nav-link active" aria-current="page" href="#"> Nuevos </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="links nav-link active" href="./Pages/Proximos.html"> Proximos </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="links nav-link active" href="./Pages/Noticias.html"> Noticias </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="links nav-link active" href="./Pages/Suscribete.html"> Suscribete </a>
+                            </li>
+                            </ul>
+                            <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success boton" type="submit">Search</button>
+                            </form>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <body>
-        <p>Nuevos</p>
-    </body>
+    <main class="main d-flex bg-dark">
+        <div class="card col-5 bg-dark text-white">
+            <img src="../Img/La-ultima-mision-del-angel.jpg" class="tarjeta card-img-top mx-auto" alt="...">
+            <div class="card-body">
+                <h3 class="card-title text-center"> Angel's last mission </h3>
+                <p class="card-text text-start">
+                    <span class="fw-bold">Genero: </span>Romance <br>
+                    <span class="fw-bold">Episodios: </span>16 <br>
+                    <span class="fw-bold">Estreno:</span>2019 <br>
+                    <span class="fw-bold">Plataformas: </span>Doramasflix, Netflix, Viki <br>
+                </p>
+            </div>
+        </div>
+        <div class="container text-white text-start col-3 text-start m-auto">
+            <p>Las personas simplemente se enamoran y dedican sus vidas al amor. A veces, le quitan la vida al otro por amor. Una mujer de corazón frío se encuentra con un ángel inmaduro y tienen que afrontar una tragedia inesperada en un momento crucial. Lee Yeon Seo es una bailarina cínica y arrogante. Se convierte en la heredera debido a la muerte repentina de sus padres. No cree en nadie, ya que hay muchas personas a su alrededor que están al acecho de su dinero heredado. Su desconfianza y arrogancia le hacen incapaz de amar. Se convierte en la mejor bailarina, pero tiene un accidente y tiene que renunciar a su sueño. Kim Dan es un ángel travieso. Cuando termina su deber como ángel en la tierra, causa problemas y solo tiene una última oportunidad de superar la crítica situación de poder extinguirse. Y esa última oportunidad es ser Cupido para Yeon Seo, pero se desespera al tener que cuidar de una Yeon Seo tan arrogante.</p>
+        </div>
+        <div class="container-fluid m-auto">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4ETXrpXM2NORYiVzU5H6zs?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </main>
+
+    <!--Footer-->
+    <div class="container-fluid bg-secondary">
+        <ul class="nav nav-pills justify-content-end">
+            <li class="footer nav-item">
+              <a class="links nav-link" href="#"> Nuevos </a>
+            </li>
+            <li class="footer nav-item">
+              <a class="links nav-link" href="./Pages/Proximos.html">Proximos</a>
+            </li>
+            <li class="footer nav-item">
+              <a class="links nav-link" href="./Pages/Noticias.html">Noticias</a>
+            </li>
+            <li class="footer nav-item">
+              <a class= "links nav-link" href="./Pages/Suscribete.html">Suscribete</a>
+            </li>
+        </ul>
+    </div>
+    </main>
+
+    <script src="../JS/bootstrap.bundle.min.js"></script>
 </body>
 </html>
