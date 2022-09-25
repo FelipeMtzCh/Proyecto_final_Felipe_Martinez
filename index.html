@@ -1,86 +1,119 @@
-
-<!--16/08/2022-->
-
+<!--Pruebas con bootstrap-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>K-Review</title>
-    <link rel="shortcut icon" href="favicon.ico">
+    <title>K-Review pruebas</title>
+    <link rel="shortcut icon" href="./favicon.ico">
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
 </head>
 
 <body>
     <!--Header-->
-    <header class = "header">
-        <img href="#" src="./Img/Logo_80x80.png" alt="Logo principal" class="logoPrincipal">
-            <h1 class = titulo> K-Review </h1>
-            <div class="containerMenu">
-                <ul class="menu">
-                    <li> <a class="menuNavegacion" href="./Pages/Nuevos.html">Nuevos</a></li>
-                    <li> <a class="menuNavegacion" href="./Pages/Proximos.html">Próximos</a></li>
-                    <li> <a class="menuNavegacion" href="./Pages/Noticias.html">Noticias</a></li>
-                    <li> <a class="menuNavegacion" href="./Pages/Suscribete.html">Suscribete</a></li>
-                </ul>
+    <header class = "d-flex container-fluid bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./Img/Logo_80x80.png" alt="" width="30" height="50" class="links align-text-center text-white logoPrincipal ">
+                    K-Review
+                </a>
+                <div class=" col navbar navbar-expand-lg navbar-light bg-secondary mx-auto">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse mx-auto" id="navbarTogglerDemo03">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
+                            <li class="nav-item">
+                                <a class="links nav-link active" aria-current="page" href="./Pages/Nuevos.html"> Nuevos </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="links nav-link active" href="./Pages/Proximos.html"> Proximos </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="links nav-link active" href="./Pages/Noticias.html"> Noticias </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="links nav-link active" href="./Pages/Suscribete.html"> Suscribete </a>
+                            </li>
+                            </ul>
+                            <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success boton" type="submit">Search</button>
+                            </form>
+                      </div>
+                    </div>
+                </div>
             </div>
+        </div>
     </header>
 
-    <!--Principal-->
-    <main class="main">
-        <!--Slider-->
-        <div class="contenido">
+    <!--Main-->
+    <main class="main overflow-hidden">
+        <!--cards-->
+        <div class="d-flex bg-dark text-white overflow-hidden">
 
-            <input class="left" type="image" src="https://api.iconify.design/bi/arrow-left-circle-fill.svg?width=35&height=35"/>
+            <input class="left" type="image" src="https://api.iconify.design/bi/arrow-left-circle-fill.svg?width=16&height=16"/>
 
-            <div class="center">
-                <div class="tarjeta">
-                    <p class="tituloTarjeta"> La ultima mision del angel </p>
-                    <img src="./Img/La-ultima-mision-del-angel.jpg" alt="Serie 1"  class="imagenTarjeta">
-                    <p class="infoTarjeta">*Info* Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae laborum officiis id minus facere totam quod, soluta eos tempore cum ea repellendus minima perferendis repellat, temporibus eum voluptates modi mollitia.</p>
-                    <a class="ampliarTarjeta" href="./Pages/Nuevos.html">Leer más</a>
+            <div class="card ml-5 m-3 bg-dark text-white">
+                <img src="./Img/La-ultima-mision-del-angel.jpg" class="tarjeta card-img-top mx-auto" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title text-center"> Angel's last mission </h3>
+                    <p class="card-text"> Some quick example text to build on the tarjeta  title and make up the bulk of the tarjeta 's content.</p>
+                    <a href="./Pages/Proximos.html" class="btn btn-primary">Leer mas</a>
                 </div>
-
-                <div class="tarjeta">
-                    <img src="./Img/love-alarm.jpg" alt="Serie 2" class="imagenTarjeta">
-                    <h3 class="tituloTarjeta"> Love alarm </h3>
-                    <p class="infoTarjeta">*Info* Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas eaque aspernatur hic temporibus nobis reiciendis provident odit tempore officiis perferendis iste, soluta voluptate sed facere, alias recusandae. Soluta, voluptate fuga!</p>
-                    <a class="ampliarTarjeta" href="./Pages/Proximos.html">Leer más</a>
-                </div>
-
-                <div class="tarjeta">
-                    <img src="./Img/goblin.jpg" alt="Serie 3" class="imagenTarjeta">
-                    <h3 class="tituloTarjeta"> Goblin </h3>
-                    <p class="infoTarjeta">*Info* Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas eaque aspernatur hic temporibus nobis reiciendis provident odit tempore officiis perferendis iste, soluta voluptate sed facere, alias recusandae. Soluta, voluptate fuga!</p>
-                    <a class="ampliarTarjeta" href="./Pages/Proximos.html">Leer más</a>
-                </div>
-
-                <div class="tarjeta">
-                    <img src="./Img/mon-lovers.jpg" alt="Serie 4" class="imagenTarjeta">
-                    <h3 class="tituloTarjeta"> Moon lovers </h3>
-                    <p class="infoTarjeta">*Info* Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas eaque aspernatur hic temporibus nobis reiciendis provident odit tempore officiis perferendis iste, soluta voluptate sed facere, alias recusandae. Soluta, voluptate fuga!</p>
-                    <a class="ampliarTarjeta" href="./Pages/Proximos.html">Leer más</a>
-                </div>
-
-                <input  class="right" type="image" src="https://api.iconify.design/bi/arrow-left-circle-fill.svg?width=35&height=35&rotate=180deg"/>
-
             </div>
+            <div class="card ml-5 m-3 bg-dark text-white">
+                <img src="./Img/goblin.jpg" class="tarjeta card-img-top mx-auto" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title text-center"> Goblin </h3>
+                    <p class="card-text"> Some quick example text to build on the tarjeta  title and make up the bulk of the tarjeta 's content.</p>
+                    <a href="./Pages/Proximos.html" class="btn btn-primary">Leer mas</a>
+                </div>
+            </div>
+            <div class="card ml-5 m-3 bg-dark text-white">
+                <img src="./Img/mon-lovers.jpg" class="tarjeta card-img-top mx-auto" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title text-center"> Moon lovers </h3>
+                    <p class="card-text"> Some quick example text to build on the tarjeta  title and make up the bulk of the tarjeta 's content.</p>
+                    <a href="./Pages/Proximos.html" class="btn btn-primary">Leer mas</a>
+                </div>
+            </div>
+            <div class="card ml-5 m-3 bg-dark text-white">
+                <img src="./Img/25-21.jpg" class="tarjeta card-img-top mx-auto" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title text-center"> 25 21 </h3>
+                    <p class="card-text"> Some quick example text to build on the tarjeta  title and make up the bulk of the tarjeta 's content.</p>
+                    <a href="./Pages/Proximos.html" class="btn btn-primary">Leer mas</a>
+                </div>
+            </div>
+
+            <input class="right" type="image" src="https://api.iconify.design/bi/arrow-left-circle-fill.svg?width=35&height=35&rotate=180deg"/>
+
         </div>
+    </main>
 
-        <div class="hoover">
-
-        </div>
-
-    <div class="footer">
-        <ul class="menu">
-            <li> <a class="menuNavegacion" href="./Pages/Nuevos.html">Nuevos</a></li>
-            <li> <a class="menuNavegacion" href="./Pages/Proximos.html">Próximos</a></li>
-            <li> <a class="menuNavegacion" href="./Pages/Noticias.html">Noticias</a></li>
-            <li> <a class="menuNavegacion" href="./Pages/Suscribete.html">Suscribete</a></li>
+<!--Footer & hover-->
+    <div class="container-fluid bg-secondary">
+        <ul class="nav nav-pills justify-content-end">
+            <li class="footer nav-item">
+              <a class="links nav-link" href="./Pages/Nuevos.html"> Nuevos </a>
+            </li>
+            <li class="footer nav-item">
+              <a class="links nav-link" href="#">Link</a>
+            </li>
+            <li class="footer nav-item">
+              <a class="links nav-link" href="#">Link</a>
+            </li>
+            <li class="footer nav-item">
+              <a class= "links nav-link" href="#">Disabled</a>
+            </li>
         </ul>
 
-        <div class="hoover">
+        <div class="hover">
             <img src="" alt="">
             <img src="" alt="">
             <img src="" alt="">
@@ -88,5 +121,7 @@
         </div>
     </div>
     </main>
+
+    <script src="./JS/bootstrap.bundle.min.js"></script>
 </body>
 </html>
