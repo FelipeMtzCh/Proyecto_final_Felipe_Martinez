@@ -4,25 +4,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="shortcut icon" href="/ProyectoFinal/favicon.ico">
+    <title>Proximos</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../CSS/proximos.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
 </head>
+
 <body>
     <!--Header-->
-    <header>
-        <img src="https://picsum.photos/80" alt="Logo principal">
-        <h1> K-Review </h1>
-        <nav>
-            <a href="../index.html">Inicio</a>
-            <a href="./Nuevos.html">Nuevos</a>
-            <a href="#">Próximos</a>
-            <a href="./Noticias.html">Noticias</a>
-            <a href="./Suscribete.html">Suscribete</a>
-        </nav>
+    <header class = "header d-flex container-fluid">
+        <div class="navbar navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../Img/Logo_80x80.png" alt="" width="30" height="50" class="links align-text-center text-white logoPrincipal ">
+                    K-Review
+                </a>
+                <div class=" col navbar navbar-expand-lg navbar-light mx-auto">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse mx-auto" id="navbarTogglerDemo03">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="links nav-link active" aria-current="page" href="./Nuevos.html"> Nuevos </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="links nav-link active" href="#"> Proximos </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="links nav-link active" href="./Noticias.html"> Noticias </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="links nav-link active" href="./Suscribete.html"> Suscribete </a>
+                            </li>
+                            </ul>
+                            <form class="d-flex justify-content-end">
+                            <input class="form-control me-2" type="Search" placeholder="Search" aria-label="Search">
+                            <button class="btn bnt-success links boton buscar" type="submit"><span class="textoBoton">Buscar</span></button>
+                            </form>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <body>
-        <p>Proximos</p>
-    </body>
+    <div class="main d-flex row bg-dark">
+        <div class="card col-sm-12 col-xs-12 col-lg-3 bg-dark text-white">
+            <img src="../Img/mon-lovers.jpg" class="tarjeta card-img-top mx-auto" alt="...">
+            <div class="card-body">
+                <h3 class="card-title text-center"> Moon lovers </h3>
+                <p class="card-text text-center">
+                    <span class="fw-bold">Genero: </span>Romance <br>
+                    <span class="fw-bold">Episodios: </span>16 <br>
+                    <span class="fw-bold">Estreno:</span>2019 <br>
+                    <span class="fw-bold">Plataformas: </span>Doramasflix, Netflix, Viki <br>
+                </p>
+            </div>
+        </div>
+        <div class="container-fluid col-xs-12 col-lg-4 text-start mt-5">
+            <div class="container text-white text-start row-4">
+                <p>Wang Soo es heredero del Emperador. Él no quiere estar en el centro de atención, pero nace de forma natural en la realeza. Su personalidad es tan fría como el hielo. Hae Soo, quien se encuentra en el tiempo actual, debido a un accidente inesperado termina viajando de regreso a la época histórica. Hae Soo se las arregla para sobrevivir en ese tiempo sin embargo debido a su personalidad y diversas situaciones terminará involucrada con los diferentes príncipes. Tras la muerte del Emperador comienza una guerra por el trono.</p>
+            </div>
+            <div class="container text-white text-start row-8">
+                <p>
+                    <span class="fw-bold">Elenco:</span> Actor1, Actor2 <br>
+                    <span class="fw-bold">Elenco:</span> Actor1, Actor2 <br>
+                    <span class="fw-bold">Elenco:</span> Actor1, Actor2 <br>
+                </p>
+            </div>
+        </div>
+        <div class="container-fluid col-xs-12 col-lg-3 m-auto">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1tOPn7Iqi9iPiNGxO8H3y0?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </main>
+
+    <!--Footer-->
+    <div class="foot container-fluid">
+        <ul class="nav nav-pills justify-content-end">
+            <li class="footer nav-item">
+              <a class="links nav-link" href="./Nuevos.html"> Nuevos </a>
+            </li>
+            <li class="footer nav-item">
+              <a class="links nav-link" href="#">Proximos</a>
+            </li>
+            <li class="footer nav-item">
+              <a class="links nav-link" href="./Noticias.html">Noticias</a>
+            </li>
+            <li class="footer nav-item">
+              <a class= "links nav-link" href="./Suscribete.html">Suscribete</a>
+            </li>
+        </ul>
+    </div>
+    </main>
+
+    <script src="../JS/bootstrap.bundle.min.js"></script>
 </body>
 </html>
