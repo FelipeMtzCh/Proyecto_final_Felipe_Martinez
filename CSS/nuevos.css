@@ -93,9 +93,13 @@ Colores extraidos de Adobe color
     color: white !important;
 }
 
+.actor{
+    font-size: 16rem;
+}
+
 .reparto{
-    border: solid 3px #737373;
-    border-radius: 50%;
+    /*border: solid 3px #fff;*/
+    border-radius: 20%;
     margin: 5px;
     padding: 1px;
 }
