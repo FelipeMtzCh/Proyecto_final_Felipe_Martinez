@@ -33,6 +33,7 @@ Colores extraidos de Adobe color
 
 .colorbck{
     background-color: #262626 !important;
+    border: none !important;
 }
 
 .tarjeta{
@@ -91,10 +92,6 @@ Colores extraidos de Adobe color
 .links{
     text-decoration: none !important;
     color: white !important;
-}
-
-.actor{
-    font-size: 16rem;
 }
 
 .reparto{
