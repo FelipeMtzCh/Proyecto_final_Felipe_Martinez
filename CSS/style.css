@@ -57,7 +57,8 @@ Colores extraidos de Adobe color
 }
 
 .tarjeta{
-    width: max-content !important;
+    width: 270px !important;
+    height: 400px !important;
 }
 
 .boton{

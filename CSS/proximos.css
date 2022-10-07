@@ -92,3 +92,10 @@ Colores extraidos de Adobe color
     text-decoration: none !important;
     color: white !important;
 }
+
+.reparto{
+    /*border: solid 3px #fff;*/
+    border-radius: 20%;
+    margin: 5px;
+    padding: 1px;
+}
