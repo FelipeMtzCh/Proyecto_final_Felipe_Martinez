@@ -4,25 +4,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="shortcut icon" href="/ProyectoFinal/favicon.ico">
+    <title> Noticias </title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
 </head>
+
 <body>
     <!--Header-->
-    <header>
-        <img src="https://picsum.photos/80" alt="Logo principal">
-        <h1> K-Review </h1>
-        <nav>
-            <a href="../index.html">Inicio</a>
-            <a href="./Nuevos.html">Nuevos</a>
-            <a href="./Proximos.html">Próximos</a>
-            <a href="#">Noticias</a>
-            <a href="./Suscribete.html">Suscribete</a>
-        </nav>
+    <header class ="header d-flex container-fluid">
+        <div class="navbar navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../Img/Logo_80x80.png" alt="Logo principal" width="30" height="100" class="links align-text-center text-white logoPrincipal ">
+                    K-Review
+                </a>
+                <div class=" col navbar navbar-expand-lg navbar-light mx-auto">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse mx-auto" id="navbarTogglerDemo03">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="links nav-link active" aria-current="page" href="./Nuevos.html"> Nuevos </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="links nav-link active" href="./Proximos.html"> Proximos </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="links nav-link active" href="./Noticias.html"> Noticias </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="links nav-link active" href="./Suscribete.html"> Suscribete </a>
+                            </li>
+                            </ul>
+                            <form class="d-flex justify-content-end">
+                            <input class="form-control me-2" type="Search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn bnt-success links boton buscar" type="submit"><span class="textoBoton">Buscar</span></button>
+                            </form>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <body>
-        <p>Noticias</p>
-    </body>
+    <main class="bg-color">
+        <div class="noticia row p-3">
+            <a class="ntc row" href="./404.html">
+                <img src="https://picsum.photos/200?random=2" alt="" class="img-noticia col-5">
+                <p class="cuerpo-noticia col-7 align-middle">
+                    <span class="fw-bold fs-2">TITULAR DE LA NOTICIA</span><br>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque ab in adipisci quos illum itaque voluptas pariatur corporis molestiae. Cum fugit enim ad hic maxime magni, recusandae exercitationem! Possimus, nulla!
+                </p>
+            </a>
+        </div>
+        <div class="noticia row p-3">
+            <a class="ntc row" href="./404.html">
+                <img src="https://picsum.photos/200?random=2" alt="" class="img-noticia col-5">
+                <p class="cuerpo-noticia col-7 align-middle">
+                    <span class="fw-bold fs-2">TITULAR DE LA NOTICIA</span><br>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque ab in adipisci quos illum itaque voluptas pariatur corporis molestiae. Cum fugit enim ad hic maxime magni, recusandae exercitationem! Possimus, nulla!
+                </p>
+            </a>
+        </div>
+        <div class="noticia row p-3">
+            <a class="ntc row" href="./404.html">
+                <img src="https://picsum.photos/200?random=2" alt="" class="img-noticia col-5">
+                <p class="cuerpo-noticia col-7 align-middle">
+                    <span class="fw-bold fs-2">TITULAR DE LA NOTICIA</span><br>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque ab in adipisci quos illum itaque voluptas pariatur corporis molestiae. Cum fugit enim ad hic maxime magni, recusandae exercitationem! Possimus, nulla!
+                </p>
+            </a>
+        </div>
+    </main>
+
+    <!--Footer-->
+    <div class="foot container-fluid">
+        <ul class="nav nav-pills justify-content-end">
+            <li class="footer nav-item">
+              <a class="links nav-link" href="./Nuevos.html"> Nuevos </a>
+            </li>
+            <li class="footer nav-item">
+              <a class="links nav-link" href="./Proximos.html">Proximos</a>
+            </li>
+            <li class="footer nav-item">
+              <a class="links nav-link" href="./Noticias.html">Noticias</a>
+            </li>
+            <li class="footer nav-item">
+              <a class= "links nav-link" href="./Suscribete.html">Suscribete</a>
+            </li>
+        </ul>
+    </div>
+    </main>
+
+    <script src="../JS/bootstrap.bundle.min.js"></script>
 </body>
 </html>

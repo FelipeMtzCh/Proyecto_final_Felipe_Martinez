@@ -1,0 +1,196 @@
+@import "variables";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'calibri';
+}
+header{
+    background-color: $gris-claro;
+    .logoPrincipal{
+        border: solid 2px $verde;
+        padding: 5px;
+        height: 80px;
+        width: 80px;
+        display: inline-block;
+        color: $gris-letra !important;
+    }
+
+    .bg-color{
+        background-color: $gris-claro;
+    }
+}
+.txtcolor{
+    color: $blanco;
+}
+.links{
+    text-decoration: none !important;
+    color: $blanco !important;
+    border: none !important;
+}
+.boton{
+    background-color: $verde !important;
+    border: none !important;
+    cursor: pointer;
+    transition: .3s ease all;
+    position: relative;
+    z-index: 1;
+    width: 150px;
+    overflow: hidden;
+}
+.textoBoton{
+    z-index: 2;
+    position: relative;
+    transition: .3s ease all;
+}
+.boton::after{
+    content: "";
+    background-color: $gris-fondo;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    transition: .3s ease-in-out all;
+    top: -40px;
+    left: 0px;
+    position: absolute;
+}
+.boton:hover::after{
+    top: 0px;
+}
+main{
+    max-height: max-content;
+    background-color: $gris-fondo !important;
+    .not-found{
+        height: 75vh;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        .txt-not-found{
+            position: absolute;
+            font-size: 5rem;
+            top: 10%;
+            left: 13%;
+            color: $blanco;
+        }
+        .txt2-not-found{
+            position: absolute;
+            font-size: 3rem;
+            top: 50%;
+            left: 17%;
+            color: $blanco;
+        }
+    }
+    .size{
+        height: 75vh;
+        width: 100%;
+        .registro {
+            width: 400px;
+            background: $verde;
+            padding: 30px;
+            margin: auto;
+            margin-top: 17px;
+            border-radius: 5px;
+            color: $blanco;
+            box-shadow: 7px 13px 37px $negro;
+            h4{
+                font-size: 22px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            .controls {
+                width: 100%;
+                background: $gris-fondo;
+                padding: 10px;
+                border-radius: 4px;
+                margin-bottom: 16px;
+                border: 1px solid $verde;
+                font-size: 18px;
+                color: $blanco;
+            }
+
+            .botons {
+                width: 100%;
+                background: $gris-fondo;
+                border: none;
+                padding: 12px;
+                color: $blanco;
+                margin: 16px 0;
+                font-size: 16px;
+            }
+        }
+    }
+    .noticia{
+        .ntc{
+            text-decoration: none;
+            color: $blanco;
+        }
+        .img-noticia{
+            height: 200px;
+            width: max-content;
+        }
+        .cuerpo-noticia{
+            color: $blanco;
+        }
+    }
+    .colorbck{
+        background-color: $gris-fondo !important;
+        border: none !important;
+    }
+    .tarjeta{
+        width: $base-index !important;
+        height: $alto !important;
+        background-color: $gris-fondo !important;
+    }
+
+    .bg-color{
+        background-color: $gris-fondo;
+        border: none;
+    }
+    .container{
+        .elenco{
+            color: $gris-letra !important;
+            text-align: center;
+            margin: $normal;
+        }
+        .reparto{
+            border-radius: 20%;
+            margin: $normal;
+            padding: $normal - 4px;
+            align-items: $centrado;
+        }
+    }
+    .col-noticias{
+        .noticia-prox{
+            height: 33.33%;
+            .ntc{
+                text-decoration: none;
+                color: $blanco;
+                font: bold;
+                .img-noticia{
+                    height: auto;
+                    width: auto;
+                    margin: 2rem;
+                    border-radius: 12%;
+                }
+                .titular{
+                    color: $blanco;
+                    font: bold;
+                }
+                .cuerpo{
+                    color: $blanco;
+                }
+            }
+        }
+    }
+}
+.foot{
+    background-color: $gris-claro;
+    .footer{
+        border: solid 1px $verde;
+        border-radius: 25px;
+        background-color: $verde;
+        padding: 5px;
+        margin: 3px;
+        margin-top: 14px;
+    }
+}
