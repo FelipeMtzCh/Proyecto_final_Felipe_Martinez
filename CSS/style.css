@@ -81,11 +81,11 @@ main {
     height: 75vh;
     width: 100%; }
     main .size .registro {
-      width: 400px;
+      width: 90vh;
       background: #172626;
-      padding: 30px;
+      padding: 50px;
       margin: auto;
-      margin-top: 17px;
+      margin-top: 50px;
       border-radius: 5px;
       color: #F2ECE4;
       box-shadow: 7px 13px 37px #0D0D0D; }
@@ -115,6 +115,7 @@ main {
     color: #F2ECE4; }
   main .noticia .img-noticia {
     height: 200px;
+    border-radius: 13%;
     width: max-content; }
   main .noticia .cuerpo-noticia {
     color: #F2ECE4; }
@@ -128,10 +129,11 @@ main {
   main .bg-color {
     background-color: #262626;
     border: none; }
-  main .container .elenco {
-    color: #BFBFBF !important;
+  main .container .sub-elenco {
+    color: white !important;
     text-align: center;
-    margin: 5px; }
+    margin: 5px;
+    z-index: 2; }
   main .container .reparto {
     border-radius: 20%;
     margin: 5px;
