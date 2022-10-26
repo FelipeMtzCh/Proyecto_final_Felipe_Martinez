@@ -9,48 +9,58 @@
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/bootstrap.min.css">
 </head>
-
-<body>
-    <!--Header-->
-    <header class ="header d-flex container-fluid">
-        <div class="navbar navbar-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">
-                    <img src="../Img/Logo_80x80.png" alt="Logo principal" width="30" height="100" class="links align-text-center text-white logoPrincipal ">
-                    K-Review
-                </a>
-                <div class=" col navbar navbar-expand-lg navbar-light mx-auto">
-                    <div class="container-fluid">
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+<header class="d-flex container-fluid">
+    <div class="navbar navbar-light bg-color">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../Img/Logo_80x80.png" alt="Logo principal" width="30" height="50"
+                    class="links align-text-center logoPrincipal" />
+                K-Review
+            </a>
+            <div class="col navbar navbar-expand-lg navbar-light mx-auto">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                        aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse mx-auto" id="navbarTogglerDemo03">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    </button>
+                    <div class="collapse navbar-collapse mx-auto" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="links nav-link active" aria-current="page" href="./Nuevos.html"> Nuevos </a>
+                                <a class="boton nav-link active" href="./Nuevos.html">
+                                    <span class="textoBoton">Nuevos</span>
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="links nav-link active" href="./Proximos.html"> Proximos </a>
+                                <a class="boton nav-link active" href="./Proximos.html">
+                                    <span class="textoBoton">Proximos</span>
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="links nav-link active" href="./Noticias.html"> Noticias </a>
+                                <a class="boton nav-link active" href="./Noticias.html">
+                                    <span class="textoBoton">Noticias</span>
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="links nav-link active" href="./Suscribete.html"> Suscribete </a>
+                                <a class="boton nav-link active" href="./Suscribete.html">
+                                    <span class="textoBoton">Suscribete</span>
+                                </a>
                             </li>
-                            </ul>
-                            <form class="d-flex justify-content-end">
-                            <input class="form-control me-2" type="Search" placeholder="Buscar" aria-label="Search">
-                            <button class="btn bnt-success links boton buscar" type="submit"><span class="textoBoton">Buscar</span></button>
-                            </form>
-                      </div>
+                        </ul>
+                        <form class="d-flex justify-content-end">
+                            <input class="form-control me-2" type="Search" placeholder="Buscar" aria-label="Search" />
+                            <button class="btn bnt-success boton buscar" type="submit">
+                                <span class="textoBoton">Buscar</span>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
-
-    <main class="bg-color d-flex">
+    </div>
+</header>
+<body>
+    <main class="colorbck d-flex">
         <div class="not-found bg-color col">
             <span class="txt-not-found">
                 PAGINA EN CONSTRUCCION
@@ -59,28 +69,25 @@
                 Proximamente agregaremos contenido a <br> esta ruta
             </span>
         </div>
-
     </main>
-
-    <!--Footer-->
-    <div class="foot container-fluid">
-        <ul class="nav nav-pills justify-content-end">
-            <li class="footer nav-item">
-              <a class="links nav-link" href="./Nuevos.html"> Nuevos </a>
-            </li>
-            <li class="footer nav-item">
-              <a class="links nav-link" href="./Proximos.html">Proximos</a>
-            </li>
-            <li class="footer nav-item">
-              <a class="links nav-link" href="./Noticias.html">Noticias</a>
-            </li>
-            <li class="footer nav-item">
-              <a class= "links nav-link" href="./Suscribete.html">Suscribete</a>
-            </li>
-        </ul>
-    </div>
-    </main>
-
     <script src="../JS/bootstrap.bundle.min.js"></script>
 </body>
+<footer class="foot container-fluid">
+    <ul class="nav nav-pills justify-content-end">
+        <li class="nav-item">
+            <a class="boton nav-link" href="./Nuevos.html"> <span class="textoBoton">Nuevos</span> </a>
+        </li>
+        <li class="nav-item">
+            <a class="boton nav-link" href="./Proximos.html">
+                <span class="textoBoton">Proximos</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="boton nav-link" href="./Noticias.html"><span class="textoBoton">Noticias</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="boton nav-link" href="./Suscribete.html"><span class="textoBoton">Suscribete</span></a>
+        </li>
+    </ul>
+</footer>
 </html>
